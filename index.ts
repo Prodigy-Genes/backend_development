@@ -1,5 +1,5 @@
 import express from 'express';
-import * as helmet from 'helmet';
+import helmet from 'helmet';
 import type {Express, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -19,7 +19,7 @@ export const pool = new pg.Pool({
   connectionTimeoutMillis: 5000,
 });
 
-app.use(helmet.default());
+app.use(helmet());
 app.use(cors({ origin: '*' }));
 app.use(express.json());
 
