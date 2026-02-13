@@ -1,0 +1,14 @@
+node_modules/
+node_modules
+.env
+node_modules/pnpm/
+node_modules/tsx/
+node_modules/.modules.yaml
+node_modules/.pnpm-workspace-state-v1.json
+dist/
+*.log
+.pnpm
+combined.log
+errors.log
+.vercel
+.env*.local
